@@ -1,0 +1,618 @@
+.poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+    
+  }
+  
+body{
+  margin:0px;
+
+}
+ * {
+    
+    font-family: "Space Grotesk", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    background: #0b0b0b;
+    
+  }
+
+
+  /** Header **/
+   
+  header{
+    font-size: 1.2rem;
+    background: transparent;
+    color:white;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+  
+    
+  }
+  .web{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+  }
+
+ a{
+    text-decoration: none;
+    background: transparent;
+    font-family: "poppins",serif;
+  }
+
+  .links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 4%;
+  }
+
+  .github{
+    margin-right: 10%;
+    background: transparent;
+    
+  }
+  .manas{
+    background: transparent;
+    margin-right: 14%;
+  }
+  .linkedin{
+    margin-right: 10%;
+    margin-left: 10%;
+    background: transparent;
+
+  }
+  .resume{
+    margin-right: 10%;
+    margin-left: 10%;
+    background: transparent;
+  }
+
+  .email{
+    background: transparent;
+
+  }
+
+a{
+  color:white;
+
+  transition-duration: 0.25s;
+}
+  a:hover{
+    color: rgb(64, 64, 64);
+  }
+
+ 
+  
+  /**  End of Header **/
+
+
+  /** Hello section **/
+
+
+  .hello-outer{
+       display:flex;
+       justify-content: center;
+  }
+
+  .hello{
+    height:100vh;
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .hello1{
+    font-size: 4rem;
+    animation: hello 0.8s ease-in-out;
+
+  }
+
+  .hello2{
+    font-size: 8rem;
+    animation: hello 1s ease-in-out;
+
+  } 
+  
+  .hello3{
+    font-size: 4rem;
+    font-style: italic;
+    color: rgb(127, 127, 127);
+    animation: hello 1.2s ease-in-out;
+   
+
+  }
+
+  /** End of Hello section **/
+
+  
+
+  /** About me section **/
+  .about-outer{
+    height:120vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about{
+    height:100vh;
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  .intro{
+    height:100vh;
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+ }
+
+  .intro1{
+    height:40%;
+    font-size:3rem;
+  }
+
+  .intro2{
+    height:40%;
+  }
+
+  .past{
+    height:80vh;
+    width:30%;
+   } 
+
+   .exp{
+    height:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+   }
+
+
+   .exp-heading{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+   }
+
+   .exp-content{
+    display: flex;
+    flex-direction: column;
+    margin:0.5rem;
+
+   }
+   .exp-content-head{
+    font-size: 1.2rem;
+    font-weight: 500;
+   }
+
+   .exp-loctim{
+    display: flex;
+    flex-direction: column;
+    
+   }
+
+   .exp-tim{
+       color: rgb(128, 128, 128);
+      }
+
+
+   .edu{
+    height:40%;
+   }
+
+  /** End of About me section **/
+
+
+
+    /** Footer **/
+
+  footer{
+    height:30vh;
+    background-color: rgb(16, 16, 16);
+    font-family: "poppins" ;
+    width:100%;
+     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding:2rem 0 2rem 0;
+  }
+
+   .footer-links{
+    display:flex;
+    background: transparent;
+    transition-duration: 0.25s;
+   width:40%;
+   display: flex;
+   justify-content: space-between;
+   }
+
+   .footer-links-link{
+    background: transparent;
+    font-size: 1rem;
+    margin-right: 2rem;
+    transition-duration: 0.25s;
+   }
+
+   .footer-links:hover{
+     color:rgb(64,64,64);
+   }
+
+   .footer-links-link:hover{
+    color:rgb(64,64,64);
+
+   }
+
+   .s{
+    transition-duration: 0.25s;
+    background: transparent;
+
+   }
+  .s:hover{
+    color:rgb(64,64,64);
+  }
+ 
+
+      
+      .footer-links-link {
+        display: flex;
+        align-items: center; /* Aligns icon and text */
+        
+        font-size: 1.5rem;
+        margin-right: 2rem;
+        transition: 0.25s ;
+        background: transparent;
+    }
+    
+    .footer-links-link i {
+        transition: color 0.25s ease-in-out, transform 0.25s ease-in-out;
+        background: transparent;
+      }
+    
+    .footer-links-link:hover,
+    .footer-links-link:hover i {
+        color: rgb(64, 64, 64);
+        
+    }
+
+    i{
+      background: transparent;
+      margin-right:1rem;
+    }
+    
+
+
+    .quote{
+      background: transparent;
+      font-style: italic;
+      font-size: 2rem;
+      color:rgb(125, 125, 125);
+    }
+
+    .rock{
+      background: transparent;
+      font-size: 1rem;
+    }
+   /** End of Footer **/
+
+    /** Projects **/
+
+.projects-outer{
+  height:350vh;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-inner{
+  height:100%;
+  width: 80vw;
+ 
+ 
+}
+
+.projects-major-heading{
+   font-size: 3rem;
+}
+    
+.projects-major-heading{
+  margin:0rem;
+  color:black;
+  background-color: white;
+  display: block;
+  padding:1rem;
+  width:12rem;
+  
+}
+
+.empty{
+  height:20vh;
+}
+
+
+.project{
+  height:80vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-left{
+  
+  height:100%;
+  width:60%;
+  
+}
+
+
+
+.project-head{
+  margin:0rem;
+  font-size: 3rem;
+   padding:1rem;
+  padding-left: 0rem;
+  display: flex;
+  align-items: end;
+  
+}
+
+.stack{
+  font-size: 1.5rem;
+  padding: 0.6rem;
+  color:#afafaf
+}
+
+
+
+.project-img{
+  width:48vw;
+  border-radius: 1rem;
+  background-color: aliceblue;
+  height:27vw;
+  margin:1rem 0rem 0rem 0rem;
+transition-duration: 0.25s;  
+background-size: contain;
+  
+  }
+
+  .project-img:hover {
+    transform: scale(1.015); /* Zoom in by 10% */
+  }
+
+  #img2.project-img{
+    background-image: url("image/Project_image_2.png");
+  }
+
+  #img1.project-img{
+    background-image: url("image/Project_image_1.png");
+  }
+
+  #img3.project-img{
+    background-image: url("image/Project_image_3.png");
+  }
+
+.project-right{
+  height:100%;
+  width:30%;
+ 
+}
+
+
+.desc{
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+    font-weight: 500;
+  }
+
+ 
+
+  .desc-text{
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    height:45vh;
+  }
+
+  .highlight{
+    color:black;
+    font-style: bold;
+    background-color: white;
+    border-radius: 5px;
+    padding:0px 6px 0px 6px;
+  }
+
+  .cto{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+      font-weight: 500;
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      height:5rem;
+      align-items: start;
+     
+    }
+
+    .cto-link{
+      border: 2px solid white;
+      text-align: center;
+      padding:10px;
+      width:80%;
+      
+      
+    }
+.cto-link:hover{
+  padding:15px 10px 15px 10px;
+  border-radius: 10px;
+  color:white;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+
+
+
+  
+    /** End of Projects **/
+
+    /** Animations **/
+
+ 
+ 
+
+
+  .hidden-left{
+    opacity: 0;
+    transform: translateX(-10%);
+    transition: all 1s ease-out;
+   
+  }  
+  .show-left{
+    opacity:1;
+    transform: translateX(0%);
+  }
+
+
+
+  .hidden-right{
+    opacity: 0;
+    transform: translateX(10%);
+    transition: all 1s ease-out;
+   
+  }  
+  .show-right{
+    opacity:1;
+    transform: translateX(0%);
+  }
+
+
+  @keyframes hello{
+    from{
+      opacity:0;
+      transform: translate(3rem);
+
+    }
+
+    to{
+      opacity:1;
+      transform: translate(0rem);
+    }
+  }
+
+  @keyframes header{
+    from{
+      opacity:0;
+      transform: translateY(-4rem);
+
+    }
+
+    to{
+      opacity:1;
+      transform: translate(0rem);
+    }
+  }
+
+/**animation delays**/
+
+
+
+.manas{
+  animation: header 0.5s ease-out;
+ }
+ .github{
+  animation: header 0.7s ease-out;
+
+ }
+ .linkedin{
+  animation: header 0.9s ease-out;
+
+ }
+ .resume{
+  animation: header 1.1s ease-out;
+
+ }
+ .email{
+  animation: header 1.3s ease-out;
+
+ }
+ #F.footer-links-link{
+  transition-delay: 0.2s;
+   }
+   #S.footer-links-link{
+    transition-delay: 0.4s;
+     }
+     #T.footer-links-link{
+      transition-delay: 0.6s;
+       }
+ .project-img-link{
+  display: block;
+ }
+
+  .project-img-link{
+    transition-delay: 0.1s;
+  }
+
+  .desc-text{
+    transition-delay:0.1s ;
+  }
+
+  .cto{
+    transition-delay:0.1s ;
+    transition-duration: 0.2s;
+  }
+
+ .quote{
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+ 
+ }
+
+
+
+
+
+
+  /** End of animation delays**/
+
+  
+  /** End of Animations **/
+
+  
+  
+ 
+  ::-webkit-scrollbar {
+    width: 10px;
+    
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #121212;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #393939;
+  }
+  
+  
+  
+
+  
