@@ -85,9 +85,16 @@ a{
   transition-duration: 0.25s;
 }
   a:hover{
-    color: rgb(64, 64, 64);
+    color: rgb(105, 105, 105);
+    
   }
-
+  .button{
+    background-color:black ;
+    color: white;
+    padding: 5px;
+    border-radius: 0;
+  
+  }
  
   
   /**  End of Header **/
@@ -312,7 +319,7 @@ a{
     /** Projects **/
 
 .projects-outer{
-  height:350vh;
+  height:450vh;
   display: flex;
   justify-content: center;
 }
@@ -328,6 +335,7 @@ a{
    font-size: 3rem;
 }
     
+
 .projects-major-heading{
   margin:0rem;
   color:black;
@@ -403,7 +411,10 @@ background-size: contain;
   #img3.project-img{
     background-image: url("image/Project_image_3.png");
   }
-
+  
+  #img4.project-img{
+    background-image: url("image/Project_image_4.png");
+  }
 .project-right{
   height:100%;
   width:30%;
