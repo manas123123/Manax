@@ -385,22 +385,24 @@ a{
 
 
 
-.project-img{
-  width:48vw;
+.project-img {
+  width: 48vw;
   border-radius: 1rem;
   background-color: aliceblue;
-  height:27vw;
-  margin:1rem 0rem 0rem 0rem;
-transition-duration: 0.25s;  
-background-size: contain;
-  
-  }
+  height: 27vw;
+  margin: 1rem 0rem 0rem 0rem;
+ /* Adjusted border width */
+  transition-duration: 0.25s;
+  background-size: contain;
+}
 
   .project-img:hover {
+    
     transform: scale(1.015); /* Zoom in by 10% */
   }
 
   #img2.project-img{
+    border: 2px solid white; 
     background-image: url("image/Project_image_2.png");
   }
 
@@ -409,6 +411,7 @@ background-size: contain;
   }
 
   #img3.project-img{
+    border: 2px solid white; 
     background-image: url("image/Project_image_3.png");
   }
   
