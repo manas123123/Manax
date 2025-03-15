@@ -319,7 +319,7 @@ a{
     /** Projects **/
 
 .projects-outer{
-  height:450vh;
+  height:550vh;
   display: flex;
   justify-content: center;
 }
@@ -417,6 +417,10 @@ a{
   
   #img4.project-img{
     background-image: url("image/Project_image_4.png");
+  }
+
+  #img5.project-img{
+    background-image: url("image/Project_image_5.png");
   }
 .project-right{
   height:100%;
