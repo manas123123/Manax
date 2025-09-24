@@ -24,9 +24,9 @@ body{
    
   header{
     font-size: 1.2rem;
-    background: transparent;
+
     color:white;
-    position: fixed;
+
     z-index: 1000;
     width: 100%;
     top: 0;
@@ -109,11 +109,12 @@ a{
   }
 
   .hello{
-    height:100vh;
+    height:70vh;
     width:80%;
+     #background-color: blue;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:flex-start;
 
   }
 
