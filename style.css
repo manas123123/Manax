@@ -320,7 +320,7 @@ a{
     /** Projects **/
 
 .projects-outer{
-  height:550vh;
+  height:650vh;
   display: flex;
   justify-content: center;
 }
