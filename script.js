@@ -9,7 +9,7 @@ const projects = [
    },
    {
       title: "LoS-V2X-Blockage Prediction",
-      stack: "Python, Vit, CNN, GRU, LWM, SWIN",
+      stack: "Python, PyTorch, NumPy, Pandas",
       imageUrl: "image/Drac.png",
       link: "https://github.com/manas123123/drac",
       description: "A multimodal deep learning research project for predicting line of sight blockage in 6G vehicular networks by fusing visual and wireless data using <span class=\"highlight\">CNN</span>, <span class=\"highlight\">ViT</span>, <span class=\"highlight\">Swin Transformer</span>, <span class=\"highlight\">Large Wireless Models (LWM)</span>, and <span class=\"highlight\">GRU</span> based temporal modeling.",
