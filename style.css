@@ -1,50 +1,58 @@
-.poppins-bold {
-  font-family: "Poppins", serif;
-  font-weight: 100;
-  font-style: normal;
+/* =====================================================
+   BASE & RESET  (mobile-first)
+   ===================================================== */
 
+html {
+  /* NO zoom hack — replaced with proper responsive design */
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
-body {
-  margin: 0px;
-
-}
-
-* {
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   font-family: "Space Grotesk", serif;
   font-weight: 300;
   font-style: normal;
   color: white;
   background: #0b0b0b;
-
 }
 
-
-/** Header **/
-
-header {
-  font-size: 1.2rem;
-
-  color: white;
-
-  z-index: 1000;
-  width: 100%;
-  top: 0;
-
-
-}
-
-.web {
-  display: flex;
-  justify-content: center;
-  background: transparent;
+body {
+  margin: 0;
+  /* Prevent ALL horizontal scroll — critical on mobile */
+  overflow-x: hidden;
+  max-width: 100vw;
+  background-color: #0b0b0b;
 }
 
 a {
   text-decoration: none;
+  color: white;
   background: transparent;
-  font-family: "poppins", serif;
+  transition: color 0.25s;
+}
+
+a:hover {
+  color: rgb(105, 105, 105);
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+header {
+  background: transparent;
+  position: relative;
+  z-index: 1000;
+  width: 100%;
 }
 
 .links {
@@ -52,522 +60,432 @@ a {
   justify-content: space-between;
   align-items: center;
   background: transparent;
-  padding: 4%;
+  padding: 1rem 5%;
+  margin: 0 auto;
+  width: 100%;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  /* wrap email under nav on narrow screens */
 }
 
-.github {
-  margin-right: 10%;
+.web {
+  display: flex;
+  justify-content: flex-start;
   background: transparent;
-
-}
-
-.manas {
-  background: transparent;
-  margin-right: 14%;
-}
-
-.linkedin {
-  margin-right: 10%;
-  margin-left: 10%;
-  background: transparent;
-
-}
-
-.resume {
-  margin-right: 10%;
-  margin-left: 10%;
-  background: transparent;
-}
-
-.email {
-  background: transparent;
-
-}
-
-a {
-  color: white;
-
-  transition-duration: 0.25s;
-}
-
-a:hover {
-  color: rgb(105, 105, 105);
-
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .button {
   background-color: transparent;
   color: white;
-  padding: 5px;
+  padding: 4px 6px;
   border-radius: 0;
-
-}
-
-
-/**  End of Header **/
-
-
-/** Hello section **/
-
-
-.hello-outer {
-  display: flex;
-  justify-content: center;
-}
-
-.hello {
-  height: 70vh;
-  width: 80%;
-  /* background-color: blue; */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
-}
-
-.hello1 {
-  font-size: 4rem;
-  animation: hello 0.8s ease-in-out;
-
-}
-
-.hello2 {
-  font-size: 8rem;
-  animation: hello 1s ease-in-out;
-
-}
-
-.hello3 {
-  font-size: 4rem;
-  font-style: italic;
-  color: rgb(127, 127, 127);
-  animation: hello 1.2s ease-in-out;
-
-
-}
-
-/** End of Hello section **/
-
-
-
-/** About me section **/
-.about-outer {
-  height: 120vh;
-  display: flex;
-  justify-content: center;
-}
-
-.about {
-  height: 100vh;
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-}
-
-.intro {
-  height: 100vh;
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-}
-
-.intro1 {
-  height: 40%;
-  font-size: 3rem;
-}
-
-.intro2 {
-  height: 40%;
-}
-
-.past {
-  height: 80vh;
-  width: 30%;
-}
-
-.exp {
-  height: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-}
-
-
-.exp-heading {
-  color: rgb(255, 255, 255);
-  font-weight: 500;
-}
-
-.exp-content {
-  display: flex;
-  flex-direction: column;
-  margin: 0.5rem;
-
-}
-
-.exp-content-head {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.exp-loctim {
-  display: flex;
-  flex-direction: column;
-
-}
-
-.exp-tim {
-  color: rgb(128, 128, 128);
-}
-
-
-.edu {
-  height: 40%;
-}
-
-/** End of About me section **/
-
-
-
-/** Footer **/
-
-footer {
-  height: 30vh;
-  background-color: rgb(16, 16, 16);
-  font-family: "poppins";
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  padding: 2rem 0 2rem 0;
-}
-
-.footer-links {
-  display: flex;
-  background: transparent;
-  transition-duration: 0.25s;
-  width: 40%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-links-link {
-  background: transparent;
-  font-size: 1rem;
-  margin-right: 2rem;
-  transition-duration: 0.25s;
-}
-
-.footer-links:hover {
-  color: rgb(64, 64, 64);
-}
-
-.footer-links-link:hover {
-  color: rgb(64, 64, 64);
-
-}
-
-.s {
-  transition-duration: 0.25s;
-  background: transparent;
-
-}
-
-.s:hover {
-  color: rgb(64, 64, 64);
-}
-
-
-
-.footer-links-link {
-  display: flex;
-  align-items: center;
-  /* Aligns icon and text */
-
-  font-size: 1.5rem;
-  margin-right: 2rem;
-  transition: 0.25s;
-  background: transparent;
-}
-
-.footer-links-link i {
-  transition: color 0.25s ease-in-out, transform 0.25s ease-in-out;
-  background: transparent;
-}
-
-.footer-links-link:hover,
-.footer-links-link:hover i {
-  color: rgb(64, 64, 64);
-
-}
-
-i {
-  background: transparent;
-  margin-right: 1rem;
-}
-
-
-
-.quote {
-  background: transparent;
-  font-style: italic;
-  font-size: 2rem;
-  color: rgb(125, 125, 125);
-}
-
-.rock {
-  background: transparent;
   font-size: 1rem;
 }
 
-/** End of Footer **/
-
-/** Projects **/
-
-.projects-outer {
-  min-height: 100vh;
-  padding-bottom: 5rem;
-  height: auto;
-  display: flex;
-  justify-content: center;
+.github,
+.manas,
+.linkedin,
+.resume,
+.email {
+  background: transparent;
 }
 
-.projects-inner {
-  height: 100%;
-  width: 80vw;
-
-
-}
-
-.projects-major-heading {
-  font-size: 3rem;
-}
-
-
-.projects-major-heading {
-  margin: 0rem;
-  color: black;
-  background-color: white;
-  display: block;
-  padding: 1rem;
-  width: 12rem;
-
-}
-
-.empty {
-  height: 20vh;
-}
-
-
-.project {
-  height: 80vh;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.project-left {
-
-  height: 100%;
-  width: 60%;
-
-}
-
-
-
-.project-head {
-  margin: 0rem;
-  font-size: 3rem;
-  padding: 1rem;
-  padding-left: 0rem;
-  display: flex;
-  align-items: end;
-
-}
-
-.stack {
-  font-size: 1.5rem;
-  padding: 0.6rem;
-  color: #afafaf
-}
-
-
-
-.project-img {
-  width: 48vw;
-  border-radius: 1rem;
-  background-color: aliceblue;
-  height: 27vw;
-  margin: 1rem 0rem 0rem 0rem;
-  /* Adjusted border width */
-  transition-duration: 0.25s;
-  background-size: cover;
-  background-position: center;
-}
-
-.project-img:hover {
-
-  transform: scale(1.015);
-  /* Zoom in by 10% */
-}
-
-
-.project-right {
-  height: 100%;
-  width: 30%;
-
-}
-
-
-.desc {
-  font-size: 2rem;
-  color: rgb(255, 255, 255);
-  font-weight: 500;
-}
-
-
-
-.desc-text {
-  margin-top: 4rem;
-  font-size: 1.5rem;
-  height: 45vh;
-}
-
-.highlight {
-  color: black;
-  font-style: bold;
-  background-color: white;
-  border-radius: 5px;
-  padding: 0px 6px 0px 6px;
-}
-
-.cto {
-  font-size: 2rem;
-  color: rgb(255, 255, 255);
-  font-weight: 500;
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  height: 5rem;
-  align-items: start;
-
-}
-
-.cto-link {
-  border: 2px solid white;
-  text-align: center;
-  padding: 10px;
-  width: 80%;
-
-
-}
-
-.cto-link:hover {
-  padding: 15px 10px 15px 10px;
-  border-radius: 10px;
-  color: white;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-}
-
-
-
-
-
-/** End of Projects **/
-
-/** Animations **/
-
-
-
-
-
-.hidden-left {
-  opacity: 0;
-  transform: translateX(-10%);
-  transition: all 1s ease-out;
-
-}
-
-.show-left {
-  opacity: 1;
-  transform: translateX(0%);
-}
-
-
-
-.hidden-right {
-  opacity: 0;
-  transform: translateX(10%);
-  transition: all 1s ease-out;
-
-}
-
-.show-right {
-  opacity: 1;
-  transform: translateX(0%);
-}
-
-
-@keyframes hello {
-  from {
-    opacity: 0;
-    transform: translate(3rem);
-
-  }
-
-  to {
-    opacity: 1;
-    transform: translate(0rem);
-  }
-}
-
-@keyframes header {
-  from {
-    opacity: 0;
-    transform: translateY(-4rem);
-
-  }
-
-  to {
-    opacity: 1;
-    transform: translate(0rem);
-  }
-}
-
-/**animation delays**/
-
-
-
+/* Header link animations */
 .manas {
   animation: header 0.5s ease-out;
 }
 
 .github {
   animation: header 0.7s ease-out;
-
 }
 
 .linkedin {
   animation: header 0.9s ease-out;
-
 }
 
 .resume {
   animation: header 1.1s ease-out;
-
 }
 
 .email {
   animation: header 1.3s ease-out;
+}
 
+
+/* =====================================================
+   HERO / HELLO SECTION
+   ===================================================== */
+
+.hello-outer {
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  overflow: visible;
+  width: 100%;
+}
+
+.hello {
+  width: 90%;
+  max-width: 1200px;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin: 0 auto;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  background: transparent;
+  overflow: visible;
+}
+
+/* Mobile: name is large but still fits in 90vw */
+.hello1 {
+  font-size: clamp(1.4rem, 7vw, 6.5rem);
+  animation: hello 0.8s ease-in-out;
+  background: transparent;
+}
+
+.hello2 {
+  /* Keep "I'm Manas Agrawal" on a single line — font scales to fit. */
+  font-size: clamp(2.2rem, 9vw, 12rem);
+  animation: hello 1s ease-in-out;
+  line-height: 1.05;
+  margin: 0.4rem 0;
+  white-space: nowrap;
+  background: transparent;
+}
+
+.hello3 {
+  font-size: clamp(1.1rem, 4.5vw, 5rem);
+  font-style: italic;
+  color: rgb(127, 127, 127);
+  animation: hello 1.2s ease-in-out;
+  line-height: 1.3;
+  background: transparent;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+
+/* =====================================================
+   ABOUT ME SECTION
+   ===================================================== */
+
+.about-outer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 5%;
+  padding-bottom: 10rem;
+  background: transparent;
+}
+
+.about {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  flex-direction: column;
+  /* mobile-first: stack */
+  gap: 3rem;
+  background: transparent;
+}
+
+.intro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: transparent;
+}
+
+.intro1 {
+  font-size: clamp(1.05rem, 3.5vw, 2.5rem);
+  line-height: 1.55;
+  background: transparent;
+}
+
+.intro2 {
+  background: transparent;
+}
+
+.past {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* mobile: stack exp + edu */
+  gap: 2.5rem;
+  background: transparent;
+}
+
+.past-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background: transparent;
+}
+
+.exp,
+.edu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: transparent;
+}
+
+.exp-heading {
+  color: white;
+  font-weight: 500;
+  font-size: clamp(1.4rem, 4vw, 2.8rem);
+  margin: 0;
+  margin-top: 0.5rem;
+  background: transparent;
+}
+
+.exp-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  background: transparent;
+}
+
+.exp-content-head {
+  font-size: clamp(0.95rem, 2.5vw, 1.4rem);
+  font-weight: 500;
+  background: transparent;
+}
+
+.exp-loctim {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  font-size: clamp(1rem, 2.8vw, 1.4rem);
+  background: transparent;
+}
+
+.exp-tim {
+  color: rgb(128, 128, 128);
+  font-size: clamp(0.95rem, 2.5vw, 1.25rem);
+  background: transparent;
+}
+
+
+/* =====================================================
+   PROJECTS SECTION
+   ===================================================== */
+
+.projects-outer {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 5%;
+  background: transparent;
+}
+
+.projects-inner {
+  width: 100%;
+  max-width: 1600px;
+  background: transparent;
+}
+
+.projects-major-heading {
+  margin: 0;
+  color: black;
+  background-color: white;
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  font-size: clamp(1.4rem, 5vw, 3rem);
+}
+
+.empty {
+  /* Spacer between projects — scales with screen */
+  height: clamp(2rem, 5vh, 6rem);
+  background: transparent;
+}
+
+/* Mobile-first: single column card */
+.project {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* stack on mobile */
+  gap: 5rem;
+  margin-bottom: clamp(15rem, 7vh, 8rem);
+  background: transparent;
+}
+
+.project-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+
+.project-head {
+  margin: 0;
+  font-size: clamp(1.2rem, 4.5vw, 2.8rem);
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  background: transparent;
+}
+
+.stack {
+  font-size: clamp(0.75rem, 2.5vw, 1.3rem);
+  padding: 0.25rem 0.5rem;
+  padding-top: 1rem;
+  color: #afafaf;
+  background: transparent;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 0.75rem;
+  background-color: aliceblue;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  margin-top: 0.5rem;
+  transition: transform 0.25s;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.project-img:hover {
+  transform: scale(1.015);
+}
+
+.project-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+
+.desc {
+  font-size: clamp(1.3rem, 5vw, 2.8rem);
+  font-weight: 300;
+  margin: 0;
+  background: transparent;
+}
+
+.desc-text {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: clamp(1.05rem, 3.5vw, 1.8rem);
+  line-height: 1.65;
+  background: transparent;
+}
+
+.highlight {
+  color: black;
+  font-weight: 300;
+  background-color: white;
+  border-radius: 5px;
+  padding: 0 5px;
+  margin-top: 0.4rem;
+  display: inline-block;
+}
+
+.cto {
+  font-size: clamp(1.1rem, 4vw, 2rem);
+  font-weight: 500;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 0.5rem;
+  background: transparent;
+}
+
+.cto-link {
+  border: 2px solid white;
+  border-radius: 6px;
+  text-align: center;
+  padding: 0.9rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.cto-link:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+.project-img-link {
+  display: block;
+  background: transparent;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+  background-color: rgb(16, 16, 16);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 3rem 5%;
+  box-sizing: border-box;
+}
+
+.footer-links {
+  display: flex;
+  background: transparent;
+  width: 100%;
+  max-width: 400px;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-links-link {
+  background: transparent;
+  font-size: clamp(1rem, 3.5vw, 1.5rem);
+  transition: color 0.25s;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.footer-links-link i {
+  background: transparent;
+  margin-right: 0.4rem;
+  transition: color 0.25s;
+}
+
+.footer-links-link:hover,
+.footer-links-link:hover i {
+  color: rgb(64, 64, 64);
+}
+
+i {
+  background: transparent;
+}
+
+.quote {
+  background: transparent;
+  font-style: italic;
+  font-size: clamp(0.85rem, 3vw, 1.5rem);
+  color: rgb(125, 125, 125);
+  text-align: center;
+  max-width: 700px;
+  line-height: 1.5;
+  padding: 0 1rem;
+}
+
+.rock {
+  background: transparent;
+  font-size: 0.9rem;
 }
 
 #F.footer-links-link {
@@ -582,8 +500,31 @@ i {
   transition-delay: 0.6s;
 }
 
-.project-img-link {
-  display: block;
+
+/* =====================================================
+   SCROLL ANIMATIONS
+   ===================================================== */
+
+.hidden-left {
+  opacity: 0;
+  transform: translateX(-10%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.show-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hidden-right {
+  opacity: 0;
+  transform: translateX(10%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.show-right {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .project-img-link {
@@ -595,32 +536,51 @@ i {
 }
 
 .cto {
-  transition-delay: 0.1s;
+  transition-delay: 0.15s;
   transition-duration: 0.2s;
 }
 
 .quote {
   transition-duration: 2s;
   transition-timing-function: ease-out;
-
 }
 
 
+/* =====================================================
+   KEYFRAME ANIMATIONS
+   ===================================================== */
+
+@keyframes hello {
+  from {
+    opacity: 0;
+    transform: translateX(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes header {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
-
-
-/** End of animation delays**/
-
-
-/** End of Animations **/
-
-
-
+/* =====================================================
+   SCROLLBAR
+   ===================================================== */
 
 ::-webkit-scrollbar {
-  width: 10px;
-
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -629,10 +589,148 @@ i {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ffffff;
+  background: #fff;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #393939;
+  background: #555;
+}
+
+
+/* =====================================================
+   MOBILE  (< 600px) — center email in header
+   ===================================================== */
+
+@media (max-width: 599px) {
+  .email {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* =====================================================
+   TABLET  (≥ 600px) — side-by-side experience columns
+   ===================================================== */
+
+@media (min-width: 600px) {
+  .past {
+    flex-direction: row;
+    /* experience + education side by side */
+    gap: 2.5rem;
+  }
+
+  .past-col {
+    flex: 1;
+  }
+
+  .cto-link {
+    width: auto;
+    min-width: 160px;
+  }
+}
+
+
+/* =====================================================
+   LARGE TABLET  (≥ 800px) — projects side-by-side
+   ===================================================== */
+
+@media (min-width: 800px) {
+  .project {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+
+  .project-left {
+    width: 55%;
+  }
+
+  .project-right {
+    width: 42%;
+  }
+}
+
+
+/* =====================================================
+   DESKTOP  (≥ 1024px) — about section side-by-side
+   ===================================================== */
+
+@media (min-width: 1024px) {
+  .hello {
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+  }
+
+  .about {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+
+  .intro {
+    width: 45%;
+  }
+
+  .past {
+    width: 52%;
+    flex-direction: row;
+  }
+
+  .links {
+    padding: 1.25rem 5%;
+  }
+
+  .button {
+    font-size: 1.1rem;
+  }
+}
+
+
+/* =====================================================
+   LARGE DESKTOP  (≥ 1400px)
+   ===================================================== */
+
+@media (min-width: 1400px) {
+  .project-left {
+    width: 55%;
+  }
+
+  .project-right {
+    width: 42%;
+  }
+
+  .cto-link {
+    min-width: 200px;
+  }
+}
+
+
+/* =====================================================
+   4K / VERY WIDE  (≥ 1800px)
+   ===================================================== */
+
+@media (min-width: 1800px) {
+  html {
+    font-size: 18px;
+  }
+
+  .hello {
+    padding-top: 8rem;
+    padding-bottom: 12rem;
+  }
+}
+
+
+/* =====================================================
+   LANDSCAPE PHONES  (short & wide)
+   ===================================================== */
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .hello {
+    min-height: auto;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
 }

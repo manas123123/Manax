@@ -8,17 +8,17 @@ const projects = [
       description: "StockSprout is a full stack <span class=\"highlight\">paper trading</span> web application that allows users to <span class=\"highlight\">simulate</span> buying and selling stocks with <span class=\"highlight\">virtual money,</span> track <span class=\"highlight\">real time</span>  portfolio performance, analyze trading history, and practice investment strategies using <span class=\"highlight\">live market data</span> without any financial risk.",
       hasBorder: false
    },
-    {
-        title: "Jobo",
-        stack: "Python, Angular, AWS Serverless Functions",
-        imageUrl: "image/Jobo.png",
-        link: "https://github.com/manas123123/jobo313",
-        description: "Jobo is a full stack serverless job tracking web application built using a scalable <span class=\"highlight\">event-driven architecture</span> with <span class=\"highlight\">AWS Lambda</span>, <span class=\"highlight\">API Gateway</span>, <span class=\"highlight\">DynamoDB</span>, and <span class=\"highlight\">EventBridge</span>. It enables users to manage job applications, track statuses, and organize application data through a responsive <span class=\"highlight\">Angular frontend</span>.",
-        hasBorder: false
-    },
+   {
+      title: "Jobo",
+      stack: "Python, Angular, AWS Serverless Functions",
+      imageUrl: "image/Jobo.png",
+      link: "https://github.com/manas123123/jobo313",
+      description: "Jobo is a full stack serverless job tracking web application built using a scalable <span class=\"highlight\">event-driven architecture</span> with <span class=\"highlight\">AWS Lambda</span>, <span class=\"highlight\">API Gateway</span>, <span class=\"highlight\">DynamoDB</span>, and <span class=\"highlight\">EventBridge</span>. It enables users to manage job applications, track statuses, and organize application data through a responsive <span class=\"highlight\">Angular frontend.</span>",
+      hasBorder: false
+   },
 
    {
-      title: "LoS-V2X-Blockage Prediction",
+      title: "LOS-Prediction",
       stack: "Python, PyTorch, NumPy, Pandas",
       imageUrl: "image/Drac.png",
       link: "https://github.com/manas123123/drac",
